@@ -47,10 +47,10 @@ body, html{
 } */
 
 
-main{
+/* main{
     flex: 1;
      padding-top: 140px;
-}
+} */
 
 #btnTopo{
     position:fixed;
@@ -455,8 +455,6 @@ footer{
     border-radius: 2px;
     font-size: 17px;
 }
-
-
   .faq h3{
     color: var(--preto);    
     font-size: 18px;
@@ -521,18 +519,34 @@ footer{
 
 .resposta-pergunta {
   max-height: 0;
-  overflow: hidden;
-  padding: 0 15px;
+  overflow: hidden; /* Esconde o conteúdo inicialmente */
+  padding: 0 15px; 
   background-color: var(--bege-claro);
   color: var(--marrom-escuro);
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-.bloco-pergunta.ativo .resposta-pergunta {
+.bloco-pergunta.ativo .resposta-pergunta .seta-abrir {
   max-height: 200px;
   padding: 15px;
+  /* display: none; */
 }
 
+.seta-abrir {
+  display: inline-block;
+}
+
+.seta-fechar{
+  display: none; 
+}
+
+.bloco-pergunta.ativo .seta-abrir {
+  display: none;
+}
+
+.bloco-pergunta.ativo .seta-fechar {
+  display: inline-block; 
+}
 
 nav a.active{
   color: var(--cinza);
