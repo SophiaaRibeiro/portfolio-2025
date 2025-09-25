@@ -16,12 +16,13 @@
     <body>
        
         <header class="cabecalho">
-            <div class="container-logo">
-            <h1 >SophiaaRibeiro.GitHub </h1>
-            <img class="foto-perfil" src="img/ft-circulo.png" alt="Sophia Ribeiro Mendonça"  width="100" height="100">
-             </div>       
+               
         
             <nav class="menu-cabecalho" id="menuCabecalho">
+                   <!-- <div class="container-logo"> -->
+            <!-- <h1 >SophiaaRibeiro.GitHub </h1> -->
+            <img class="foto-perfil" src="img/ft-circulo.png" alt="Sophia Ribeiro Mendonça"  width="100" height="100">
+             <!-- </div>  -->
             <a href="#home" class="active">Home</a>            
             <a href="#projetos">Projetos</a>
             <a href="#curriculo">Currículo</a>
@@ -31,8 +32,8 @@
             <a href="#contato">Contato</a>     
         </nav>
         </header>
-        <section class="container" id="home">            
-            <div class="container-texto">              
+        <section class="hero" id="home">            
+            <div class="hero-text">              
             <h2>Seja bem-vindo(a) ao meu portfólio!</h2>    
                 <p>
                 Aqui você encontrará informações sobre mim, meus projetos, conhecimentos, e muito mais. Fique à vontade para explorar!<br></p>
@@ -48,9 +49,8 @@
                 <a class = "botoes" href = "https://www.linkedin.com/in/sophia-r-mendonça-95105a252/" target="_blank"><img src="img/linkedin.png" width="50" height="50" alt="Linkedin"></a><br>
                 <a class = "botoes" href = "https://www.instagram.com/sophia.mribeiro/" target="_blank"><img src="img/instagram.png" width="50" height="50" alt="Linkedin"></a><br>
                 </div> 
-            </div>        
-
-            <img class="foto-sophia-chat" src="img/chat-eu.png" alt="imagem criada pelo chat de eu desenvolvendo meu portfolio" width="500" height="400">            
+            </div>     
+            <!-- <img class="foto-sophia-chat" src="img/chat-eu.png" alt="imagem criada pelo chat de eu desenvolvendo meu portfolio" width="500" height="400">             -->
         </section>
 
         <section class="secao-projetos" id="projetos" class="active">
@@ -104,19 +104,7 @@
                 
             </div>
         </section>
-
-         <section class="container-texto" id="curriculo">          
-            <h2>Fique á vontade para visualizar ou baixar meu currículo!</h2>
-          
-                <a class="botao-curriculo"  href="doc/Currículo TI 2025.pdf" download="Currículo TI 2025.pdf">
-                    📥 Baixar Currículo
-                </a><br><br>
-
-
-             <iframe src="doc/Currículo TI 2025.pdf" width="100%" height="600px">
-                Seu navegador não suporta visualização de PDF.
-                </iframe>
-        </section>
+         
               
             <section class="secao-faq"  id="sobremim">
                         <div class="bloco-pergunta">
@@ -168,9 +156,24 @@
                                 <p>Atualmente, estou trabalhando em um site de cafeteria usando Bootstrap.</p>
                             </div>
                         </div>                                    
-            </section>           
+            </section>
 
-        <section class="container-texto" id="contato">          
+            <section class="container-curriculo" id="curriculo">          
+             <div class="curriculo-conteudo">
+                <h2>Fique á vontade para visualizar ou baixar meu currículo!</h2>
+            
+                    <a class="botao-curriculo"  href="doc/Currículo TI 2025.pdf" download="Currículo TI 2025.pdf">
+                        📥 Baixar Currículo
+                    </a><br><br>
+
+
+                <iframe src="doc/Currículo TI 2025.pdf" >
+                    Seu navegador não suporta visualização de PDF.
+                    </iframe>
+            </div>
+        </section>           
+
+        <section class="container-form" id="contato">          
             <h2>Entre em contato comigo para saber mais.</h2>
      
                 <form action="https://formsubmit.co/sophia.mribeiro16@gmail.com" method="POST"  class="formulario-contato">
