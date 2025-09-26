@@ -15,20 +15,19 @@
     </head>
     <body>
        
-        <header class="cabecalho">
-               
+        <header class="cabecalho">              
         
             <nav class="menu-cabecalho" id="menuCabecalho">
                    <!-- <div class="container-logo"> -->
             <!-- <h1 >SophiaaRibeiro.GitHub </h1> -->
             <img class="foto-perfil" src="img/ft-circulo.png" alt="Sophia Ribeiro Mendonça"  width="100" height="100">
              <!-- </div>  -->
-            <a href="#home" class="active">Home</a>            
+            <a href="#home" class="active">Home</a>  
+            <a href="#sobremim">Sobre Mim</a>  
+            <a href="#conhecimentos">Conhecimentos</a>        
             <a href="#projetos">Projetos</a>
-            <a href="#curriculo">Currículo</a>
-            <a href="conhecimentos.html">Conhecimentos</a>
-            <a href="certificados.html" >Certificados</a>
-            <a href="#sobremim">Sobre Mim</a>
+            <a href="#certificados" >Certificados</a>
+            <a href="#curriculo">Currículo</a>          
             <a href="#contato">Contato</a>     
         </nav>
         </header>
@@ -53,125 +52,241 @@
             <!-- <img class="foto-sophia-chat" src="img/chat-eu.png" alt="imagem criada pelo chat de eu desenvolvendo meu portfolio" width="500" height="400">             -->
         </section>
 
-        <section class="secao-projetos" id="projetos" class="active">
-            <h2>Projetos realizados, ou em andamento!🙂 </h2>
-                              
-            <ul>
-                <div class="container-projetos"> 
-                    <div class="projeto">
-                        <li class="projeto-titulo">Portfólio</li>
-                        <p class="projeto-explicacao">↳ Um portfólio que apresenta meus projetos e minha trajetória profissional.</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS e JavaScript</p>
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/portfolio-html-css" target="_blank">Ver no GitHub</a>
+        <section class="secao-faq"  id="sobremim">
+            <div class="bloco-pergunta">
+                <button class="btn-pergunta-sobremim">Quem sou eu?
+                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
+                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
+                </button>
+                    <div class="resposta-pergunta">
+                    <p>Sou estudante de Sistemas para Internet e tenho experiência prática em desenvolvimento web com HTML, CSS, C#, JavaScript e SQL em ambiente profissional. No dia a dia, atuo na criação e manutenção de views em MVC, manipulação de dados e melhorias de interfaces. Além disso, estou me aprofundando em metodologias ágeis e gestão de projetos, buscando unir conhecimento técnico e organizacional para entregar soluções mais completas.</p>
                     </div>
+            </div>    
 
-                    <div class="projeto">
-                        <li class="projeto-titulo">Calculadora Windows</li>
-                        <p class="projeto-explicacao">↳ Uma calculadora simples que simula a calculadora do Windows.</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: C#</p>
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/Calculadora-Windows" target="_blank">Ver no GitHub</a>
+            <div class="bloco-pergunta">
+                <button class="btn-pergunta-sobremim">Em qual instituição de ensino você estuda?
+                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
+                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
+                </button>
+                    <div class="resposta-pergunta">
+                        <p>Estudo na Fatec Rubens Lara, e já estudei  em uma plataforma de estudos online onde aprofundei meus conhecimentos em HTML, CSS, C#, SQL e mais. Também estou desenvolvendo este portfólio com projetos práticos e desafios pessoais.</p>
                     </div>
+            </div>                    
+          
+            <div class="bloco-pergunta">
+                    <button class="btn-pergunta-sobremim" >Tinha experiência no mercado de trabalho?
+                        <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
+                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
+                    </button>
+                        <div class="resposta-pergunta">
+                            <p>Sim! Trabalhei como auxiliar administrativa, e essa experiência me ajudou a ser mais organizada e focada. Mas sempre tive vontade de seguir algo mais desafiador e que me desenvolvesse como profissional.</p>
+                        </div>   
+            </div>                   
 
-                    <div class="projeto">
-                        <li class="projeto-titulo">Construção de um site para cafeterias</li>
-                        <p class="projeto-explicacao">↳ Em desenvolvimento.</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS, Bootstrap, e JavaScript</p>    
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/cafeteria-site" target="_blank">Ver no GitHub</a>
+            <div class="bloco-pergunta">
+                <button class="btn-pergunta-sobremim">Qual meu objetivo?
+                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
+                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
+                </button>
+                    <div class="resposta-pergunta">
+                        <p>Atualmente estou estudando Gestão de Projetos e, ao mesmo tempo, me desenvolvendo para atuar como programadora full stack. Meu objetivo é unir conhecimento em tecnologia e gestão para criar soluções completas, e estou correndo atrás desse sonho todos os dias</p>
                     </div>
-
-                    <div class="projeto">
-                        <li class="projeto-titulo">Primeira Aplicação com HTML e CSS</li>
-                        <p class="projeto-explicacao">↳ Meu primeiro projeto desenvolvido em HTML e CSS.</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/primeira-aplicacao-html-css" target="_blank">Ver no GitHub</a>
-                    </div>
-
-                    <div class="projeto">
-                        <li class="projeto-titulo">Jogo do Número secreto</li>
-                        <p class="projeto-explicacao">↳ Jogo do número secreto desenvolvido no curos da Alura</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/JogoNumeroSecreto" target="_blank">Ver no GitHub</a>
-                    </div>
-
-                    <div class="projeto">
-                        <li class="projeto-titulo">Alura Plus</li>
-                        <p class="projeto-explicacao">↳ Site desenvolvido na alura no curso de html e css: praticando html e css</p>
-                        <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
-                        <a class="projeto-link" href="https://github.com/SophiaaRibeiro/alura-plus" target="_blank">Ver no GitHub</a>
-                    </div>
-                </div>             
-            </ul>
-                
             </div>
-        </section>
-         
-              
-            <section class="secao-faq"  id="sobremim">
-                        <div class="bloco-pergunta">
-                            <button class="btn-pergunta-sobremim">Quem sou eu?
-                                <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                                <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                            </button>
-                                <div class="resposta-pergunta">
-                                <p>Sou estudante de Sistemas para Internet e tenho experiência prática em desenvolvimento web com HTML, CSS, C#, JavaScript e SQL em ambiente profissional. No dia a dia, atuo na criação e manutenção de views em MVC, manipulação de dados e melhorias de interfaces. Além disso, estou me aprofundando em metodologias ágeis e gestão de projetos, buscando unir conhecimento técnico e organizacional para entregar soluções mais completas.</p>
-                                </div>
-                        </div>    
 
-                        <div class="bloco-pergunta">
-                            <button class="btn-pergunta-sobremim">Em qual instituição de ensino você estuda?
-                                <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                                <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                            </button>
-                                <div class="resposta-pergunta">
-                                    <p>Estudo na Fatec Rubens Lara, e já estudei  em uma plataforma de estudos online onde aprofundei meus conhecimentos em HTML, CSS, C#, SQL e mais. Também estou desenvolvendo este portfólio com projetos práticos e desafios pessoais.</p>
-                                </div>
-                        </div>                    
-                      
-                        <div class="bloco-pergunta">
-                                <button class="btn-pergunta-sobremim" >Tinha experiência no mercado de trabalho?
-                                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                                <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                                </button>
-                                    <div class="resposta-pergunta">
-                                        <p>Sim! Trabalhei como auxiliar administrativa, e essa experiência me ajudou a ser mais organizada e focada. Mas sempre tive vontade de seguir algo mais desafiador e que me desenvolvesse como profissional.</p>
-                                    </div>   
-                        </div>                   
+            <div class="bloco-pergunta">
+                <button class="btn-pergunta-sobremim">No que está trabalhando no momento?
+                    <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
+                    <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
+                </button>                  
+                <div class="resposta-pergunta">
+                    <p>Atualmente, estou trabalhando em um site de cafeteria usando Bootstrap.</p>
+                </div>
+            </div>                                    
+        </section>       
+        
+        <section class="conhecimentos-section" id="conhecimentos">                     
+            <div class="filtros">
+              <button onclick="filtrar('todos', this)" class="active">Todos</button>
+              <button onclick="filtrar('frontend', this)">Front-end</button>
+              <button onclick="filtrar('backend', this)">Back-end</button>
+              <button onclick="filtrar('bd', this)">Banco de Dados</button>
+              <button onclick="filtrar('gp', this)">Gestão de Projetos</button>
+            </div>
 
-                        <div class="bloco-pergunta">
-                            <button class="btn-pergunta-sobremim">Qual meu objetivo?
-                                <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                                <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                            </button>
-                                <div class="resposta-pergunta">
-                                    <p>Atualmente estou estudando Gestão de Projetos e, ao mesmo tempo, me desenvolvendo para atuar como programadora full stack. Meu objetivo é unir conhecimento em tecnologia e gestão para criar soluções completas, e estou correndo atrás desse sonho todos os dias</p>
-                                </div>
-                        </div>
+           
+            <div id="conhecimentos-container" class="container-conhecimentos">
+              <div class="caixinha-conhecimento frontend">
+                <h2>HTML</h2>
+                <p>HTML semântico, formulários, estrutura organizada.</p>
+                <div class="barra"><div class="progresso" data-valor="75"></div></div>
+              </div>
 
-                        <div class="bloco-pergunta">
-                            <button class="btn-pergunta-sobremim">No que está trabalhando no momento?
-                                <img src="img/icone-aparecer.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-abrir" aria-hidden="true" width="18" height="18">
-                                <img src="img/seta-recolher.png" alt="icone seta de aparecer a pergunta" class="seta-faq seta-fechar" aria-hidden="true" width="18" height="18">
-                            </button>                  
-                            <div class="resposta-pergunta">
-                                <p>Atualmente, estou trabalhando em um site de cafeteria usando Bootstrap.</p>
-                            </div>
-                        </div>                                    
-            </section>
+       
+              <div class="caixinha-conhecimento frontend">
+                <h2>CSS</h2>
+                <p>Layouts com Flexbox, Grid, media queries, animações.</p>
+                <div class="barra"><div class="progresso" data-valor="65"></div></div>
+              </div>
 
-            <section class="container-curriculo" id="curriculo">          
-             <div class="curriculo-conteudo">
-                <h2>Fique á vontade para visualizar ou baixar meu currículo!</h2>
+          
+              <div class="caixinha-conhecimento frontend">
+                <h2>JavaScript</h2>
+                <p>Manipulação do DOM, lógica, eventos, animações.</p>
+                <div class="barra"><div class="progresso" data-valor="30"></div></div>
+              </div>
+
             
-                    <a class="botao-curriculo"  href="doc/Currículo TI 2025.pdf" download="Currículo TI 2025.pdf">
-                        📥 Baixar Currículo
-                    </a><br><br>
+              <div class="caixinha-conhecimento backend">
+                <h2>C#</h2>
+                <p>Uso em automações e sistemas web, integração com SQL.</p>
+                <div class="barra"><div class="progresso" data-valor="80"></div></div>
+              </div>
 
+            
+              <div class="caixinha-conhecimento bd">
+                <h2>SQL</h2>
+                <p>Consultas com JOINs, procedures, manipulação real de dados.</p>
+                <div class="barra"><div class="progresso" data-valor="50"></div></div>
+              </div>
 
-                <iframe src="doc/Currículo TI 2025.pdf" >
-                    Seu navegador não suporta visualização de PDF.
-                    </iframe>
+              <div class="caixinha-conhecimento frontend">
+                <h2>AJAX</h2>
+                <p>Comunicação assíncrona com o servidor, atualização de conteúdo sem recarregar a página.</p>
+                <div class="barra"><div class="progresso" data-valor="40"></div></div>
+              </div>
+
+              <div class="caixinha-conhecimento frontend">
+                <h2>jQuery</h2>
+                <p>Simplificação da manipulação do DOM, eventos e requisições AJAX.</p>
+                <div class="barra"><div class="progresso" data-valor="40"></div></div>
+              </div>
+
+              <div class="caixinha-conhecimento frontend">
+                <h2>Bootstrap</h2>
+                <p>Desenvolvimento responsivo com componentes prontos, grid system e estilização rápida.</p>
+                <div class="barra"><div class="progresso" data-valor="35"></div></div>
+              </div>
+
+              <div class="caixinha-conhecimento gp">
+                <h2>Scrum</h2>
+                <p>Metodologia ágil para gestão de projetos, com foco em sprints, planejamento e entregas contínuas.</p>
+                <div class="barra"><div class="progresso" data-valor="40"></div></div>
+              </div>
+
+              <div class="caixinha-conhecimento gp">
+                <h2>Kanban</h2>
+                <p>Organização de tarefas com quadros visuais, priorização de fluxos e melhoria de processos.</p>
+                <div class="barra"><div class="progresso" data-valor="80"></div></div>
+              </div>
+
+              <div class="caixinha-conhecimento bd">
+                <h2>Excel</h2>
+                <p>Criação de planilhas, fórmulas, tabelas dinâmicas e análise de dados.</p>
+                <div class="barra"><div class="progresso" data-valor="60"></div></div>
+              </div>
+
             </div>
-        </section>           
+    </section>
+
+    <section class="secao-projetos" id="projetos" class="active">
+        <h2>Projetos realizados, ou em andamento!🙂 </h2>
+                          
+        <ul>
+            <div class="container-projetos"> 
+                <div class="projeto">
+                    <li class="projeto-titulo">Portfólio</li>
+                    <p class="projeto-explicacao">↳ Um portfólio que apresenta meus projetos e minha trajetória profissional.</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS e JavaScript</p>
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/portfolio-html-css" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <li class="projeto-titulo">Calculadora Windows</li>
+                    <p class="projeto-explicacao">↳ Uma calculadora simples que simula a calculadora do Windows.</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: C#</p>
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/Calculadora-Windows" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <li class="projeto-titulo">Construção de um site para cafeterias</li>
+                    <p class="projeto-explicacao">↳ Em desenvolvimento.</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML, CSS, Bootstrap, e JavaScript</p>    
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/cafeteria-site" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <li class="projeto-titulo">Primeira Aplicação com HTML e CSS</li>
+                    <p class="projeto-explicacao">↳ Meu primeiro projeto desenvolvido em HTML e CSS.</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/primeira-aplicacao-html-css" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <li class="projeto-titulo">Jogo do Número secreto</li>
+                    <p class="projeto-explicacao">↳ Jogo do número secreto desenvolvido no curos da Alura</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/JogoNumeroSecreto" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <li class="projeto-titulo">Alura Plus</li>
+                    <p class="projeto-explicacao">↳ Site desenvolvido na alura no curso de html e css: praticando html e css</p>
+                    <p class="projeto-tecnologia">⤹ Tecnologias: HTML e CSS</p>    
+                    <a class="projeto-link" href="https://github.com/SophiaaRibeiro/alura-plus" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>             
+        </ul>
+            
+        </div>
+    </section>             
+             
+        
+        <section class="container-texto" id="certificados">          
+            <div class="container-certificados">
+            <h2>Em todos os links você será direcionado para o documento do certifcado</h2>
+
+          
+            <section>
+                <h3>HTML e CSS</h3>
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/537e1bd9-4387-424f-94ac-419f737650d8" target="_blank" >Certificado Alura HTML e CSS: trabalhando com responsividade e publicação de projetos</a><br>
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/4af46192-ad4b-4bdf-ae29-3f91dcc79271?lang" target="_blank" >Certificado Alura HTML e CSS: praticando HTML/CSS</a><br>
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/5588157f-db36-465a-bfde-803ebb42f0eb?lang" target="_blank" >Certificado Alura HTML e CSS: Classes, posicionamento e Flexbox</a><br>
+           </section>
+
+            <section>
+                <h3>C#</h3>
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/cc9dfcf6-eb44-4f7b-9728-699787fa566c?lang" target="_blank" >C#: Trabalhando com Arrays e Coleções</a><br>
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/44c7a112-9a53-4957-8e57-48a5e1328d03?lang" target="_blank" >C#: dominando Orientação a Objetos</a><br>
+           </section>
+              
+              <section>
+                <h3>SQL</h3> 
+           <a class="certificados" href="https://cursos.alura.com.br/certificate/02c56675-e3ba-4864-b1a6-f01b654d0d27?lang" target="_blank" >Modelagem de dados: desenvolvendo o modelo lógico</a><br>
+            <a class="certificados" href="https://cursos.alura.com.br/certificate/3f6f69c8-c6dc-45dc-bf77-585a59358d18?lang" target="_blank" >Modelagem de dados: identificando entidades, atributos, relacionamentos</a><br>
+            </section> 
+
+             <section>
+                <h3>Eventos</h3> 
+           <a class="certificados" href="https://www.linkedin.com/in/sophia-r-mendon%C3%A7a-95105a252/overlay/1744075850575/single-media-viewer/?profileId=ACoAAD5Mvc0Bl_iWZfdrjTRi4mxg8o8iTmcYd1w" target="_blank" >Redefine Possible - International Women's Day</a><br>
+            
+            </section> 
+            </div>                 
+        </section>
+
+        <section class="container-curriculo" id="curriculo">          
+            <div class="curriculo-conteudo">
+               <h2>Fique á vontade para visualizar ou baixar meu currículo!</h2>
+           
+                   <a class="botao-curriculo"  href="doc/Currículo TI 2025.pdf" download="Currículo TI 2025.pdf">
+                       📥 Baixar Currículo
+                   </a><br><br>
+
+
+               <iframe src="doc/Currículo TI 2025.pdf" >
+                   Seu navegador não suporta visualização de PDF.
+                   </iframe>
+           </div>
+       </section> 
 
         <section class="container-form" id="contato">          
             <h2>Entre em contato comigo para saber mais.</h2>

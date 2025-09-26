@@ -3,7 +3,7 @@
 
 
 :root{
-    --marrom: #856c5e;
+    --marrom: #403220;
     --marrom-escuro: #261911;
     --marrom-clarin: #8C7765;
     --bege: #A69E94;
@@ -57,7 +57,7 @@ body, html{
 .hero {
  width: 50%; /* ocupa toda a largura da tela */
   height: 50vh;
-  background-image: url("/img/chat-eu.png"); /* coloque sua foto */
+ /* background-image: url("/img/chat-eu.png");  coloque sua foto */
   background-size: cover; /* cobre a tela sem distorcer */
   background-position: center;
   display: flex;
@@ -74,7 +74,7 @@ body, html{
 
 
 .hero-text {
-  background: rgba(0,0,0,0.5); /* fundo escuro transparente para dar contraste */
+ /* background: rgba(0,0,0,0.5);  fundo escuro transparente para dar contraste */
   border-radius: 10px;
   padding: 20px;
   max-width: 800px;
@@ -121,7 +121,7 @@ body, html{
 
 .container-curriculo {
   width: 100%;                 /* fundo ocupa a tela inteira */
-  background-color: var(--cinza);
+  background-color: var(--bege-acinzentado);
   padding: 40px 0;             /* espaço em cima e embaixo */
 }
 
@@ -178,6 +178,7 @@ h1{
     gap: 20px;   
     padding: 10px 0;
     z-index: 1000;    
+    background-color: var(--azul-vintage);
 }
 
 /* .menu-cabecalho a.ativo {
@@ -187,11 +188,14 @@ h1{
 
 .menu-cabecalho a{
     text-decoration: none;
-    color: var(--bege);
+    color: var(--cinza-claro);
     font-size: 18px; 
     font-weight: bold;
     letter-spacing: 1px; /* espaçamento entre letras */
-    transition: color 0.3s, font-weight 0.3s; /* transição suave para hover */  
+    transition: color 0.3s, font-weight 0.3s; /* transição suave para hover */
+    display: inline-block;   /* 👈 faz o link se comportar como bloco */
+    line-height: 2.0;        /* 👈 ajusta a altura da linha (pode diminuir se ainda tiver espaço) */
+    padding: 5px 0;  /* transição suave para hover */  
 }
 
 
@@ -203,8 +207,7 @@ h1{
 footer{
  background-color: var(--azul-img-bg);
   padding: 5px;
-  text-align: center;
-  margin-top: 20px;
+  text-align: center;  
   color: var(--branco);
 }
 
@@ -259,7 +262,7 @@ footer{
 .container-projetos a{
     padding: 8px;
     border-radius: 10px;
-    background-color: var(--bege-acinzentado);
+    background-color: var(--cinza-azulado);
     font-weight: bold;
 }
 
@@ -279,7 +282,7 @@ footer{
 .projeto-titulo{
     font-size: 18px;
     margin-left: 15px;
-    color: var(--marrom-escuro);
+    color: var(--preto);
     font-weight: bold;
 }
 
@@ -296,14 +299,19 @@ footer{
 
 .projeto-link{
     text-decoration: none;
-    color: var(--marrom-escuro);
+    color: var(--bege-acinzentado);
     font-size: 14px;
     margin-top: auto; /* Empurra esse link para o final do container */
 }
 
+.projeto-link:hover{
+    text-decoration: underline;
+    color: var(--marrom);
+}
+
 
 .botao-curriculo{
-    background-color: var(--cinza-azulado);
+    background-color: var(--laranja-suave);
     color: var(--preto);
     padding: 10px 20px;
     border: none;
@@ -313,16 +321,15 @@ footer{
 }
 
 .container-texto{
-   flex: 1 1 400px;
-    max-width: 600px;
-    text-align: justify;
+  display: flex;
+    text-align: center;
     font-size: 18px;
     font-family: Raleway, sans-serif;
-    /* margin-top: 60px; */
+    padding: 30px;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    padding-top: 130px;
+    /* margin: 0 auto; */
+    background-color: var(--areia-suave);
 }
 
 
@@ -335,13 +342,13 @@ footer{
 }
 
 .filtros button {
-  background-color: var(--marrom-clarin);
+  background-color: var(--bege);
   color: var(--preto);
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
-    font-weight: 600;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
@@ -382,11 +389,12 @@ footer{
 }
 
 .conhecimentos-section {
-  padding-top: 180px; /* ajuste conforme a altura real do seu header */
+  padding: 50px; 
+  background-color: var(--areia-suave);
 }
 
 .conhecimento {
-  background-color: var(--marrom-clarin);
+  background-color: var(--azul-vintage);
   margin: 10px;
   padding: 20px;
   text-align: center;
@@ -404,7 +412,7 @@ footer{
 }
 
 .caixinha-conhecimento {
-  background-color: var(--marrom-clarin);
+  background-color: var(--cinza-azulado);
   padding: 20px;
   width: 280px;
   border-radius: 10px;
@@ -414,13 +422,17 @@ footer{
 
 .caixinha-conhecimento h2 {
     margin-top: 0;
-    color: var(--marrom-escuro);
+    color: var(--azul-vintage);
     text-align: center;
 }
 
-.container-certificados h2{
+.lista-certificados h2{
     font-size: 15px;
     text-align: center;
+}
+
+.container-certificados{
+  background-color: var(--areia-suave);
 }
 
 
@@ -429,10 +441,10 @@ footer{
     flex-wrap: wrap;
     justify-content: left;
     gap: 10px;
-    background-color: var(--marrom-clarin);
+    background-color: var(--azul-vintage);
     padding: 20px;
     text-decoration: none;
-    color: var(--marrom-escuro);
+    color: var(--bege-claro);
 }
 
 .certificados:hover{
@@ -443,17 +455,17 @@ footer{
 .formulario-contato{
   display: flex;
   flex-direction: column;
-  border: 5px solid var(--marrom-escuro);
+  border: 5px solid var(--azul-vintage);
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 30px;
   max-width: 600px;
   margin: auto;
-  background-color: var(--bege);
+  background-color: var(--cinza);
 }
 
 .container-form{    
-  background-color: var(--cinza);
+  background-color: var(--areia-suave);
   text-align: center;
   color: var(--preto);
 }
@@ -461,7 +473,7 @@ footer{
 .formulario-contato input,
 .formulario-contato textarea {
   padding: 12px;
-  border: 1px solid var(--marrom-escuro);
+  border: 1px solid var(--cimento);
   border-radius: 8px;
   font-family: inherit;
   font-size: 16px;
@@ -472,8 +484,8 @@ footer{
 
 .formulario-contato button {
   padding: 12px;
-  background-color: var(--bege-acinzentado);
-  color: var(--preto);
+  background-color: var(--azul-vintage);
+  color: var(--branco);
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -487,7 +499,7 @@ footer{
 
 
 .formulario-contato button:hover {
-  background-color: var(--marrom-clarin);
+  background-color: var(--cinza-azulado);
 }
 
 
@@ -528,7 +540,7 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 0;  
-    background-color: var(--cinza-claro);
+    background-color: var(--bege-acinzentado);
     /* border-radius: 2px; */
     margin: 0;    
 }
@@ -599,7 +611,7 @@ footer{
 }
 
 nav a.active{
-  color: var(--cinza);
+  color: var(--bege-claro);
   border-bottom: 2px solid var(--branco);
   /* padding-bottom: 5px; */
 }
@@ -612,7 +624,7 @@ nav a:hover{
 
 
 .filtros button.active {
-  background-color: var(--marrom); 
+  background-color: var(--cinza-azulado); 
   color: var(--branco);           
   border: 2px solid var(--marrom-escuro);
 }
