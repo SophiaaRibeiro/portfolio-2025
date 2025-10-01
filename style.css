@@ -33,7 +33,7 @@
     --azul-vintage: #354646 ;
     --cimento: #655D49;
     --cor-de-pele-nanilo: #D7B687;
-
+    --cor-imagem-fundo-clara: #223A3B;
   }
 
 
@@ -45,33 +45,37 @@ body, html{
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
-    scroll-behavior: smooth; /* rolagem suave */
-    /* background-image: url('img/fundo-technologico.png'); */
+    scroll-behavior: smooth;
+    /* background-image: url('img/fundo-tech-azul.png'); */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* efeito parallax */
+    background-attachment: fixed; 
     background-repeat: no-repeat;
-    transition: background-image 0.5s; /* transição suave para mudança de tema */
+    transition: background-image 0.5s; 
 }
 
 .hero {
- width: 50%; /* ocupa toda a largura da tela */
-  height: 50vh;
- /* background-image: url("/img/chat-eu.png");  coloque sua foto */
-  background-size: cover; /* cobre a tela sem distorcer */
+ /* width: 50%;
+  height: 50vh; */
+ background-image: url('img/fundo-img-clara.png'); 
+  background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white; /* texto em branco para destacar */
-  padding: 50px;
-  margin: 90px auto; /* margem em cima/baixo = 90px, esquerda/direita = auto */
-  background-color: var(--azul-vintage);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra suave */
+  color: var(--branco); 
+  padding: 50px; 
 }
 
+h1{
+  color:var(--bege-claro);
+  display: inline-block;
+  font-size: 70px;
+  text-align: center;
+  font-family: var(--fonte-principal);
+ 
+}
 
 .hero-text {
  /* background: rgba(0,0,0,0.5);  fundo escuro transparente para dar contraste */
@@ -79,6 +83,7 @@ body, html{
   padding: 20px;
   max-width: 800px;
 }
+
 #btnTopo{
     position:fixed;
     bottom: 20px;
@@ -147,21 +152,12 @@ body, html{
 }
 
 
-h1{
-    color:var(--cinza);
-    font-size: 18px;
-    text-align: center;
-   
-}
-
 .cabecalho{
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
-  background-color: var(--azul-img-bg);
-  z-index: 1000; /* Garante que fique acima dos outros elementos */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+  width:100%;  
+  z-index: 1000; 
 }
 
 
@@ -178,7 +174,7 @@ h1{
     gap: 20px;   
     padding: 10px 0;
     z-index: 1000;    
-    background-color: var(--azul-vintage);
+    background-color: var(--cor-imagem-fundo-clara);
 }
 
 /* .menu-cabecalho a.ativo {
@@ -338,7 +334,7 @@ footer{
   gap: 15px;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  margin-left: 38%;
+  justify-content: center;
 }
 
 .filtros button {
@@ -431,9 +427,6 @@ footer{
     text-align: center;
 }
 
-.container-certificados{
-  background-color: var(--areia-suave);
-}
 
 
 .certificados{
@@ -626,5 +619,5 @@ nav a:hover{
 .filtros button.active {
   background-color: var(--cinza-azulado); 
   color: var(--branco);           
-  border: 2px solid var(--marrom-escuro);
+  border: 2px solid var(--azul-vintage);
 }
