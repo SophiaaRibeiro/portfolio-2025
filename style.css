@@ -425,7 +425,7 @@ footer{
     flex-wrap: wrap;
     justify-content: left;
     gap: 10px;
-    background-color: var(--Verde-acinzentado-escuro);
+    background-color: var(--cinza-azulado);
     padding: 20px;
     text-decoration: none;
     color: var(--bege-claro);
@@ -659,10 +659,9 @@ nav a:hover{
 select{
   padding: 10px;
   border-radius: 5px;
-  background-color: var(--cor-imagem-fundo-clara);
-  color: var(--branco);
- 
-  border: 1px solid var(--azul-vintage);
+  background-color: var(--Azul-esverdeado);
+  color: var(--branco); 
+  border: 1px solid var(--bege-acinzentado);
   font-size: 16px;
   margin-bottom: 20px;
 }
