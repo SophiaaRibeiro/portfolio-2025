@@ -434,14 +434,14 @@ footer{
     flex-wrap: wrap;
     justify-content: left;
     gap: 10px;
-    background-color: var(--azul-vintage);
+    background-color: var(--cinza-azulado);
     padding: 20px;
     text-decoration: none;
     color: var(--bege-claro);
 }
 
 .certificados:hover{
-    color: var(--cinza);
+    color: var(--azul-vintage);
     text-decoration: underline;
 }
    
@@ -666,4 +666,16 @@ nav a:hover{
   grid-column-end: 5; /* ocupa 2 colunas */
   grid-row-start: 3;
   grid-row-end: 5;   /* ocupa 1 linha */
+}
+
+
+select{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--cor-imagem-fundo-clara);
+  color: var(--branco);
+ 
+  border: 1px solid var(--azul-vintage);
+  font-size: 16px;
+  margin-bottom: 20px;
 }
